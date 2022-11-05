@@ -1,0 +1,17 @@
+:root {
+	--color-gray: #37474f;
+	--color-gray-light: #b0bec5;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: var(--color-gray);
+	margin: 2rem;
+	text-align: center;
+}
