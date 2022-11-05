@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
 
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="for-heading">
-        <h1>Add New Book To Library</h1>
-        <button class="add-book">Add book</button>
+      <h1>Add New Book To Library</h1>
+      <button class="add-book">Add book</button>
     </div>
     <div class="books-heading">
-        <h1>Current Books In Library</h1>
+      <h1>Current Books In Library</h1>
     </div>
 
-    
-</body>
+    <form>
+      <span class="close">&times;</span>
+      <h1 class="form-title">Add book</h1>
+      <label for="title">Title:</label>
+      <br />
+      <input type="text" id="title" name="title" />
+      <br />
+      <label for="author">Author:</label>
+      <br />
+      <input type="text" id="author" name="author" />
+      <br />
+      <label for="pages">Pages:</label>
+      <br />
+      <input type="number" id="pages" name="pages" />
+      <br />
+      <label for="read">Read?:</label>
+      <br />
+      <input type="checkbox" id="read" name="read" />
+      <br />
+      <br />
+      <input class="submit" type="submit" value="Submit" />
+    </form>
+    <div class="books"></div>
+  </body>
 </html>
