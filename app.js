@@ -19,3 +19,11 @@ let myLibrary = [];
 close.addEventListener('click', () => {
 	form.style.display = 'none';
 });
+
+addBookBtn.addEventListener('click', () => {
+	form.style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	submit.addEventListener('click', addBookToLibrary);
+});
