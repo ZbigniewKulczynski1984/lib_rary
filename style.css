@@ -41,3 +41,23 @@ button {
 	right: 10px;
 	cursor: pointer;
 }
+
+.wrapper-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 20rem);
+	grid-template-rows: 200px;
+	grid-auto-rows: 200px;
+	grid-auto-columns: repeat(auto-fit, 20rem);
+	justify-content: center;
+}
+
+.container {
+	height: 200px;
+	overflow: hidden;
+	box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+	background-color: white;
+	text-align: center;
+	border-radius: 1rem;
+	position: relative;
+	margin: 0.5rem;
+}
