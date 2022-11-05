@@ -17,13 +17,27 @@ body {
 }
 
 form {
-    display: none;
-    padding: 10px;
-    background-color: aquamarine;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
+	display: none;
+	padding: 10px;
+	background-color: aquamarine;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
 
+button {
+	display: block;
+	margin: 5px auto;
+}
+
+.form-title {
+	padding-top: 20px;
+}
+
+.close {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+}
