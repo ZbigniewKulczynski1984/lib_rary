@@ -27,3 +27,17 @@ addBookBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
 	submit.addEventListener('click', addBookToLibrary);
 });
+
+const addBookToLibrary = (e) => {
+	e.preventDefault();
+	let book = {
+		title: document.getElementById('title').value,
+		author: document.getElementById('author').value,
+		pages: document.getElementById('pages').value,
+		read: document.getElementById('read').checked,
+	};
+	myLibrary.push(book);
+	form.style.display = 'none';
+	form.reset();
+	display();
+};
